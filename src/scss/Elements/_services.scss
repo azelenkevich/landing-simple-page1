@@ -1,0 +1,40 @@
+.services{
+    overflow: hidden;
+    
+    &__slider{
+        width: 100%;
+        height: 355px;
+        margin-bottom: 80px;
+    }
+    &-slide{
+        width: 255px;
+        box-shadow: 0 0 10px 0 rgba($color: #000000, $alpha: 0.1);
+        position: relative;
+        border-radius: 15px;
+        transition: all .3s;
+        &__descr{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 18px 40px;
+            background-color: #fff;
+            border-bottom-left-radius: 8px;
+            border-top-right-radius: 8px;
+            transition: all .3s;
+        }
+        &:hover{
+            .services-slide__descr{
+                color: $accent;
+                transition: all .3s;
+            }
+            box-shadow: 0 4px 4px 0 rgba($color: #000000, $alpha: 0.25);
+            transition: all .3s;
+        }
+    }
+}
+
+
+@media(max-width: 500px){
+
+}
+
